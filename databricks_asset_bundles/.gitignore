@@ -1,4 +1,4 @@
-.databricks/
+#.databricks/
 build/
 dist/
 __pycache__/
