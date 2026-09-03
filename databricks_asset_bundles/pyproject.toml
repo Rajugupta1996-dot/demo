@@ -1,5 +1,5 @@
 [project]
-name = "my_project"
+name = "databricks_asset_bundles"
 version = "0.0.1"
 authors = [{ name = "rajkumar.f.rajkumar@capgemini.com" }]
 requires-python = ">=3.10,<3.13"
@@ -21,7 +21,7 @@ dev = [
 ]
 
 [project.scripts]
-main = "my_project.main:main"
+main = "databricks_asset_bundles.main:main"
 
 [build-system]
 requires = ["hatchling"]

@@ -1,17 +1,17 @@
-# The main pipeline for my_project
+# The main pipeline for databricks_asset_bundles
 
 resources:
   pipelines:
-    my_project_etl:
-      name: my_project_etl
+    databricks_asset_bundles_etl:
+      name: databricks_asset_bundles_etl
       catalog: ${var.catalog}
       schema: ${var.schema}
       serverless: true
-      root_path: "../src/my_project_etl"
+      root_path: "../src/databricks_asset_bundles_etl"
 
       libraries:
         - glob:
-            include: ../src/my_project_etl/transformations/**
+            include: ../src/databricks_asset_bundles_etl/transformations/**
 
       environment:
         dependencies:
